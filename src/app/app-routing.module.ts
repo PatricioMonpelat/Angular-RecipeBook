@@ -8,8 +8,8 @@ import { ShoppingListComponent } from './shopping-list/shopping-list.component';
 
 const appRoutes: Routes = [
     { path: '' , redirectTo: '/recipes', pathMatch: 'full'},
-    { path: 'recipes' , component: RecipesComponent, children:[
-        { path: '',component: RecipesStartComponent },
+    { path: 'recipes' , component: RecipesComponent, children: [
+        { path: '', component: RecipesStartComponent },
         { path: 'new', component: RecipesEditComponent },
         { path: ':id', component: RecipesDetailComponent },
         { path: ':id/edit', component: RecipesEditComponent }
