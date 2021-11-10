@@ -4,13 +4,14 @@ import { catchError } from 'rxjs/operators';
 import { throwError } from 'rxjs';
 import { runInThisContext } from 'vm';
 
-interface AuthReponseData {
+export interface AuthReponseData {
     kind: string;
     idToken: string;
     email: string;
     refreshToken: string;
     expiresIn: string;
     localId: string;
+    registered?: boolean;
 }
 
 @Injectable({ providedIn: 'root' })
@@ -38,5 +39,16 @@ export class AuthService {
                     return throwError(errorMessage);
                 })
             );
+    }
+
+    login(email: string, password: string) {
+        return this.http.post<AuthReponseData>('https://identitytoolkit.googleapis.com/v1/accounts:signInWithPassword?key=AIzaSyCWGBnCxgEdSaon3sHB_oa0zG-2fqsjgnc',
+            {
+                email: email,
+                password: password,
+                returnSecureToken: true,
+
+            }
+        );
     }
 }
