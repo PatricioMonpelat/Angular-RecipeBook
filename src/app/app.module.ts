@@ -20,7 +20,7 @@ import { RecipesEditComponent } from './recipes/recipes-edit/recipes-edit.compon
 import { RecipeService } from './recipes/recipe.services';
 import { AuthComponent } from './auth/auth.component';
 import { LoadingSpinnerComponent } from './shared/loading-spinner/loading-spinner.component';
-import { AuthInterceptiorService } from './auth/auth-interceptor.service';
+import { AuthInterceptorService } from './auth/auth-interceptor.service';
 
 @NgModule({
   declarations: [
@@ -45,7 +45,7 @@ import { AuthInterceptiorService } from './auth/auth-interceptor.service';
     HttpClientModule,
     AppRoutingModule
   ],
-  providers: [ShoppingListService, RecipeService, {provide: HTTP_INTERCEPTORS, useClass: AuthInterceptiorService, multi: true}],
+  providers: [ShoppingListService, RecipeService, {provide: HTTP_INTERCEPTORS, useClass: AuthInterceptorService, multi: true}],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
