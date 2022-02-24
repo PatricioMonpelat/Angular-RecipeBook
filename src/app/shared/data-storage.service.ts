@@ -26,12 +26,19 @@ export class DataStorageService {
   }
 
   fetchRecipes() {
-    return this.http
+    this.http
       .get<Recipe[]>(
         'https://courseprojectangular-dde40-default-rtdb.firebaseio.com/recipes.json'
       )
+      // .subscribe(recipes => {
+      //   this.recipeService.setRecipes(recipes);
+      // });
+
+
+
       .pipe(
         map(recipes => {
+          console.log(recipes);
           return recipes.map(recipe => {
             return {
               ...recipe,
@@ -41,6 +48,7 @@ export class DataStorageService {
         }),
         tap(recipes => {
           this.recipeService.setRecipes(recipes);
+          console.log(recipes);
         })
       );
 
