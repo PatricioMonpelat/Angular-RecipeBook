@@ -1,5 +1,6 @@
 import { CommonModule } from '@angular/common';
 import { NgModule } from '@angular/core';
+import { LogginngService } from '../logging.service';
 import { AlertComponent } from './alert/alert.component';
 import { DropdownDirective } from './dropdown.directive';
 import { LoadingSpinnerComponent } from './loading-spinner/loading-spinner.component';
@@ -22,9 +23,8 @@ import { PlaceholderDirective } from './placeholder/placeholder.directive';
         DropdownDirective,
         CommonModule
     ],
-    entryComponents: [
-        AlertComponent
-    ]
+    entryComponents: [AlertComponent],
+    providers: [LogginngService]
 })
 
 export class SharedModule {
