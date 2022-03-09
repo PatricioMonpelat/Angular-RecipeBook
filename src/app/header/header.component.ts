@@ -1,6 +1,7 @@
 import { Component, OnDestroy, OnInit } from '@angular/core';
 import { Subscription } from 'rxjs';
 import { AuthService } from '../auth/auth.service';
+import { RecipeService } from '../recipes/recipe.services';
 import { DataStorageService } from '../shared/data-storage.service';
 
 @Component({
@@ -12,7 +13,7 @@ export class HeaderComponent implements OnInit, OnDestroy {
     private userSub: Subscription;
     isAuthenticated = false;
 
-    constructor(private dataStorageService: DataStorageService, private authService: AuthService) {
+    constructor(private dataStorageService: DataStorageService, private authService: AuthService, private recipeService: RecipeService) {
 
     }
     ngOnInit() {
@@ -25,12 +26,12 @@ export class HeaderComponent implements OnInit, OnDestroy {
 
     onSaveData() {
         this.dataStorageService.storeRecipes();
-        console.log('save function');
+        console.log('button save');
     }
 
     onFetchData() {
         this.dataStorageService.fetchRecipes();
-        console.log('fetch function ok');
+        console.log('button fetch');
     }
 
     ngOnDestroy() {
