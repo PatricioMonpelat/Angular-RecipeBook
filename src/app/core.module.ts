@@ -1,7 +1,7 @@
 import { HTTP_INTERCEPTORS } from '@angular/common/http';
 import { NgModule } from '@angular/core';
 import { AuthInterceptorService } from './auth/auth-interceptor.service';
-import { LogginngService } from './logging.service';
+import { LoggingService } from './logging.service';
 import { RecipeService } from './recipes/recipe.services';
 
 @NgModule({
