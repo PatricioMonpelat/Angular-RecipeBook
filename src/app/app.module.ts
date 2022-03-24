@@ -15,7 +15,6 @@ import * as fromApp from './store/app.reducer';
 import { AuthEffects } from './auth/store/auth.effects';
 import { environment } from '../environments/environment';
 import { RecipeEffects } from './recipes/store/recipe.effects';
-import { RecipeService } from './recipes/recipe.services';
 
 
 @NgModule({
@@ -31,7 +30,6 @@ import { RecipeService } from './recipes/recipe.services';
     SharedModule,
     CoreModule
   ],
-  bootstrap: [AppComponent],
-  providers: [RecipeService]
+  bootstrap: [AppComponent]
 })
 export class AppModule {}
