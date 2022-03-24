@@ -1,19 +1,14 @@
-import { Component, OnInit } from '@angular/core';
-import { DataStorageService } from '../shared/data-storage.service';
-import { RecipeService } from './recipe.services';
+import { Component, Injectable, OnInit } from '@angular/core';
 @Component({
   selector: 'app-recipes',
   templateUrl: './recipes.component.html',
-  styleUrls: ['./recipes.component.css'],
-  providers: [RecipeService]
+  styleUrls: ['./recipes.component.css']
 })
 
+@Injectable({providedIn: 'root'})
 export class RecipesComponent implements OnInit {
-
   constructor() { }
 
   ngOnInit() {
-
   }
-
 }
