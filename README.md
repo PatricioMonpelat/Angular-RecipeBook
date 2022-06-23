@@ -7,6 +7,7 @@ In order to log in please create a new user with email and password.
 This project was generated with Angular CLI and it allows you to create edit or delete a recipe from the recipe book. <br> You can also add ingredients to the shopping list.<br><br>
 ![image](https://user-images.githubusercontent.com/42411943/175340061-80626dda-266b-4f34-82b8-86209c9b0d52.png)
 <br><br>
+Click under manage to save and store the recipes. Try to fetch if you already have some recipes.
 ## Steps to Clone
 ![image](https://user-images.githubusercontent.com/42411943/175340879-b9749d03-c1dd-45b7-8a83-5c569359e56d.png)
 <br>
