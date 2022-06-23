@@ -1,6 +1,7 @@
 # Recipe Book
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 6.0.0.
+It allows you to create edit or delete a recipe from the recipebook. You can also add ingredients to the shopping list.
 # USER INFORMATION IN ORDER TO LOG IN
 USER: tester@test.com
 PASS: 123456
