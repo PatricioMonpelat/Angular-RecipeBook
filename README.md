@@ -2,7 +2,7 @@
 
 
 In order to log in please create a new user with email and password.<br>
-![image](https://user-images.githubusercontent.com/42411943/175343915-6e261b4f-2076-4024-b2fe-7cfe366061f6.png)
+![image](https://user-images.githubusercontent.com/42411943/175343915-6e261b4f-2076-4024-b2fe-7cfe366061f6.png)<br>
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 6.0.0.<br>
 It allows you to create edit or delete a recipe from the recipe book. <br> You can also add ingredients to the shopping list.<br>
 ![image](https://user-images.githubusercontent.com/42411943/175340061-80626dda-266b-4f34-82b8-86209c9b0d52.png)
