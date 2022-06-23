@@ -1,0 +1,37 @@
+.navbar {
+    position:relative;
+    text-align:center;
+    background: linear-gradient(60deg, rgba(84,58,183,1) 0%, #00acc1 100%);
+    color:white;
+    border-color: transparent;
+  }
+
+  .navbar-brand{
+    color:White;
+  }
+  .navbar-brand:hover{
+    color: #00acc1;
+  }
+  .navbar-default .navbar-nav>.active>a {
+    color: white;
+    background: linear-gradient(60deg, rgba(84,58,183,1) 0%, #00acc1 100%);
+  }
+  .navbar-default .navbar-nav>.active>a:hover {
+    color:black;
+    background: white;
+  }
+  
+ 
+
+  .h1 {
+    font-family: 'Lato', sans-serif;
+    font-weight:300;
+    letter-spacing: 2px;
+    font-size:48px;
+  }
+  .p {
+    font-family: 'Lato', sans-serif;
+    letter-spacing: 1px;
+    font-size:14px;
+    color: #333333;
+  }
