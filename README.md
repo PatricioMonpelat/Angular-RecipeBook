@@ -12,7 +12,8 @@ Click under manage to save and store the recipes. Try to fetch if you already ha
 ![image](https://user-images.githubusercontent.com/42411943/175340879-b9749d03-c1dd-45b7-8a83-5c569359e56d.png)
 <br>
 Clone or dowload zip. Open folder with a code editor.<br>
-Run npm install. 
+Run npm install.<br>
+Run npm start.<br>
 ## Development server
 Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
 ## Build
