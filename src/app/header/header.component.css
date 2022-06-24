@@ -5,7 +5,9 @@
     color:white;
     border-color: transparent;
   }
-
+.navbar-default{
+  background: linear-gradient(60deg, rgba(84,58,183,1) 0%, #00acc1 100%);
+}
   .navbar-brand{
     color:White;
   }
