@@ -1,20 +1,28 @@
 .navbar {
     position:relative;
     text-align:center;
+    width: 100%;
     background: linear-gradient(60deg, rgba(84,58,183,1) 0%, #00acc1 100%);
     color:white;
-    border-color: transparent;
+    border-radius: 0%;
   }
 .navbar-default{
   background: linear-gradient(60deg, rgba(84,58,183,1) 0%, #00acc1 100%);
 }
+.navbar-default .navbar-nav>.open>a {
+  color: black;
+  background: white;
+
+}
   .navbar-brand{
+    margin-left: 10px;
     color:White;
   }
   .navbar-brand:hover{
     color: #00acc1;
   }
   .navbar-default .navbar-nav>.active>a {
+    margin-left: 20px;
     color: white;
     background: linear-gradient(60deg, rgba(84,58,183,1) 0%, #00acc1 100%);
   }
@@ -24,6 +32,7 @@
   }
   
   .navbar-default .navbar-nav>li>a {
+    margin-right: 20px;
     color: white;
 }
 
