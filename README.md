@@ -1,7 +1,7 @@
 # Recipe Book Project
 
 
-In order to log in please create a new user with email and password.
+In order to log in please create a new user providing an email and password.
 <br><br>
 ![image](https://user-images.githubusercontent.com/42411943/175344793-b3f7f9f5-a515-4721-958b-e2cacadd110f.png)<br><br>
 This project was generated with Angular CLI and it allows you to create edit or delete a recipe from the recipe book. <br> You can also add ingredients to the shopping list.<br><br>
@@ -17,5 +17,5 @@ Run npm start.<br>
 ## Development server
 Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
 ## Build
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
+Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build. 
 
