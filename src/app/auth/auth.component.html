@@ -40,7 +40,7 @@ of Simple CSS Waves-->
           required
           minlength="6"
           [type]="hidePassword ? 'password' : 'text'"/>
-        <mat-icon  class="interior-icon" (click)="hidePassword=!hidePassword">{{ hidePassword ? 'visibility_off' : 'visibility'}}</mat-icon>
+        <span  class="interior-icon" (click)="hidePassword=!hidePassword">{{ hidePassword ? 'visibility_off' : 'visibility'}}</span>
       </div>
       <div>
         <button
