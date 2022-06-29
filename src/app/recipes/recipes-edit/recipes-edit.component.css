@@ -1,3 +1,7 @@
 input.ng-invalid.ng-touched, textarea.ng-invalid.ng-touched {
     border: 1px solid red;
 }
+.row{
+    margin-left: 5px;
+    margin-right: 5px;
+}
