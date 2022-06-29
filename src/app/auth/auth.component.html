@@ -14,10 +14,11 @@ of Simple CSS Waves-->
     <div *ngIf="isLoading" style="text-align: center;">
       <app-loading-spinner></app-loading-spinner>
     </div>
-    <form #authForm="ngForm" (ngSubmit)="onSubmit(authForm)" *ngIf="!isLoading" class="form">
+    <form #authForm="ngForm" (ngSubmit)="onSubmit(authForm)" *ngIf="!isLoading" class="form" >
       <div class="form-group">
         <label for="email">E-Mail</label>
         <input
+          pInputText
           type="email"
           id="email"
           class="form-control"
@@ -30,14 +31,16 @@ of Simple CSS Waves-->
       <div class="form-group">
         <label for="password">Password</label>
         <input
-          type="password"
           id="password"
-          class="form-control"
+          type="text"
+          pInputText
           ngModel
+          class="form-control"
           name="password"
           required
           minlength="6"
-        />
+          [type]="hidePassword ? 'password' : 'text'"/>
+        <mat-icon  class="interior-icon" (click)="hidePassword=!hidePassword">{{ hidePassword ? 'visibility_off' : 'visibility'}}</mat-icon>
       </div>
       <div>
         <button
